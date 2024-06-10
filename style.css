@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #34495e;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 100vw;
+    height: 100vh;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.bars-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 70%;
+    margin-bottom: 20px;
+}
+
+.bar {
+    width: 10px;
+    background-color: #3498db;
+    border-radius: 5px 5px 0 0;
+    margin: 0 2px;
+    transition: height 0.5s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.slider-container label {
+    color: white;
+    margin-bottom: 5px;
+}
+
+.slider-container input {
+    width: 200px;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 20px;
+}
+
+.buttons-container > button {
+    width: 150px;
+    height: 40px;
+    background-color: #1abc9c;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.buttons-container > button:hover {
+    background-color: #16a085;
+}
+
+#dont_click_btn {
+    background-color: #e74c3c;
+}
+
+#dont_click_btn:hover {
+    background-color: #c0392b;
+}
+
+@keyframes blink {
+    0% { background-color: red; }
+    50% { background-color: white; }
+    100% { background-color: red; }
+}
+
+.dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+
